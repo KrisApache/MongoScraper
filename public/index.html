@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Scraping With Mongoose</title>
+  <style>
+    body {
+      background-color: #F2F6D0
+    }
+
+    #wrapper {
+      width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 5%;
+    }
+
+    /* #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+      } */
+
+    #notes {
+      float: right;
+      width: 30%;
+    }
+
+    textarea,
+    input {
+      display: block;
+      width: 100%;
+      background-color: #FCF5C7;
+    }
+
+    input {
+      height: 36px;
+      font-size: 24px;
+    }
+
+    textarea {
+      height: 200px;
+      font-size: 18px;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+</head>
+
+<body style="background:lightcyan">
+  <div class="row">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">MongoScraper</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+          <li>
+            <a class="waves-effect waves-light btn" href="scrape">
+              <i class="material-icons left">blur_on</i>Scrape New Articles</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="row" style="margin:0px">
+    <div class="col m12">
+      <img src="./news.jpg" width="100%" style="margin:0px" />
+    </div>
+  </div>
+
+  <div id="articles" class="col m12"></div>
+
+  <div id="wrapper">
+    <!-- <h1>Note Scraper</h1>
+      <h2><i>If you can do this...the homework should be no problem.</i></h2> -->
+
+    <div id="notes"></div>
+  </div>
+
+  <div id="modal1" class="modal">
+      <div class="modal-content">
+        <!-- <h4 id="modl-header"></h4> -->
+        <!-- <p id="modl-text"></p> -->
+      </div>
+      <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Add/Update Note</label>
+        </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn"><i class="material-icons">add</i></a>
+      </div>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
